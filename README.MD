@@ -1,5 +1,7 @@
 # Create GH teams, repos, and associate them together in an org
 
+## How to use
+
 1. Create an empty public github org.
 
 2. Not required, but I choose to create a github bot user for this public org and set it as an owner. This isolates my main github account from  potential exposure. Given this is a public org for public demo purposes, if the account were compromised somehow, I don't lose much by destroying everything.
@@ -45,3 +47,10 @@ export GITHUB_TOKEN=918723049871230948
 terraform plan -out myplan
 terraform apply myplan
 ```
+
+## What it builds
+
+* Creates teams based on an `app-{AA}` pattern. 
+* Creates repos with a pattern of: `app-{AA}-component-{00}`.
+* Puts the repos into the team with the corresponding equal prefix.
+
