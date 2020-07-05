@@ -1,6 +1,4 @@
-# Terraform to create a simple all-public org structure
-
-Use this module to create teams, repos, and associate them together.
+# Create GH teams, repos, and associate them together in an org
 
 1. Create an empty public github org.
 
